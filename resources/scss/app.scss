@@ -1,0 +1,74 @@
+@import './variable';
+@import '~noty/src/noty.scss';
+@import'~noty/src/themes/mint.scss';
+
+
+
+    body 
+    {
+        font-family: 'sanista',sans-serif;
+        -webkit-font-smoothing:antialiased;
+       color: black
+    }
+
+nav li a {
+
+    transition: all .3s ease-in-out;
+    &:hover{
+        color: $primary;
+    }
+}
+
+nav li :last-child a{
+background:rgb(179, 237, 245);
+
+&:hover{
+    background: $primary-hover;
+}
+}
+
+section.hero{
+    background: $secondary;
+}
+
+.add-to-cart{
+    border: 2px solid $primary;
+    transition: .3s ease-in-out;
+    &:hover{
+        background: $primary;
+        border-color: $pure;
+        color: $pure;
+    }
+}
+.btn-primary {
+
+    background: $primary;
+       transition: .3s ease-in-out;
+    &:hover{
+        background: green;
+        
+    }
+
+
+}
+
+section.cart{
+    background: $secondary;
+    .amount{
+        color: $primary;
+    }
+}
+
+section.login{
+    background: $secondary;
+}
+
+
+.jhat {
+color: green;
+}
+
+.noty_theme_mint {
+    border-radius: 50px!important;
+    padding-left: 8px!important;
+}
